@@ -74,7 +74,7 @@ make
 ```
 
 ```
-wget http://download-ib01.fedoraproject.org/pub/epel/7/x86_64/Packages/l/libdb4-4.8.30-3.el7.x86_64.rpm
+wget http://download-ib01.fedoraproject.org/pub/epel/7/x86_64/Packages/l/libdb4-4.8.30-13.el7.x86_64.rpm
 wget http://download-ib01.fedoraproject.org/pub/epel/7/x86_64/Packages/l/libdb4-devel-4.8.30-13.el7.x86_64.rpm
 
 rpm -Uvh libdb4-4.8.30-13.el7.x86_64.rpm
