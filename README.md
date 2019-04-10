@@ -36,9 +36,12 @@ wget http://mirror.centos.org/centos/7/os/x86_64/Packages/nettle-2.7.1-8.el7.x86
 wget http://mirror.centos.org/centos/7/os/x86_64/Packages/trousers-0.3.14-2.el7.x86_64.rpm
 wget ftp://ftp.pbone.net/mirror/ftp5.gwdg.de/pub/opensuse/repositories/home:/matthewdva:/build:/EPEL:/el7/RHEL_7/x86_64/freetds-0.95.81-1.el7.x86_64.rpm
 wget ftp://ftp.pbone.net/mirror/ftp5.gwdg.de/pub/opensuse/repositories/home:/matthewdva:/build:/EPEL:/el7/RHEL_7/x86_64/freetds-devel-0.95.81-1.el7.x86_64.rpm
+wget http://mirror.centos.org/centos/7/updates/x86_64/Packages/gnutls-3.3.29-9.el7_6.i686.rpm
+
 
 rpm -Uvh nettle-2.7.1-8.el7.x86_64.rpm
 rpm -Uvh trousers-0.3.14-2.el7.x86_64.rpm
+rpm -Uvh gnutls-3.3.29-9.el7_6.i686.rpm
 rpm -Uvh freetds-0.95.81-1.el7.x86_64.rpm
 rpm -Uvh freetds-devel-0.95.81-1.el7.x86_64.rpm
 ```
