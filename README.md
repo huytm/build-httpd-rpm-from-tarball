@@ -1,7 +1,7 @@
 # build-httpd-rpm-from-tarball
 Build httpd rpm from tarball - Ví dụ httpd-2.4.28
 
-#### Requirement 
+## Requirement 
 - Centos 7 
 
 ```sh
@@ -21,7 +21,7 @@ systemctl disable firewalld
 reboot
 ```
 
-#### Cài đặt các gói cần thiết
+## Cài đặt các gói cần thiết
 
 Trong bước này một số gói có thể cài đặt bằng yum, một số gói không thể cài bằng yum mình sẽ cài bằng rpm hoặc từ tarball
 
@@ -93,7 +93,7 @@ cd /root/rpmbuild/RPMS/x86_64/
 rpm -Uvh apr-util-*
 ```
 
-#### Build httpd rpm 
+## Build httpd rpm 
 
 Tạo một folder chứa các file thực thi
 
