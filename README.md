@@ -52,14 +52,21 @@ cd /root/rpmbuild/RPMS/x86_64/
 rpm -Uvh distcache-*
 ```
 
-**Berkeley DB-5.3.28**
+**Berkeley DB-5.3.21**
+
+Kiểm tra vì sao nên cài Berkeley DB-5.3.21
+
+```
+# rpm -qa | grep libdb
+libdb-5.3.21-24.el7.x86_64
+```
 
 ```sh
 yum install gcc-c++
 cd
-wget http://download.oracle.com/berkeley-db/db-4.7.25.tar.gz
-tar xzvf db-4.7.25.tar.gz
-cd db-4.7.25/build_unix/
+wget http://download.oracle.com/berkeley-db/db-5.3.21.tar.gz
+tar xzvf db-5.3.21.tar.gz
+cd db-5.3.21/build_unix/
 ../dist/configure
 make
 make install
