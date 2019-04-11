@@ -57,21 +57,12 @@ rpm -Uvh distcache-*
 ```sh
 yum install gcc-c++
 cd
-wget http://anduin.linuxfromscratch.org/BLFS/bdb/db-5.3.28.tar.gz
-tar -xzvf db-5.3.28.tar.gz
-
-cd db-5.3.28
-sed -i 's/\(__atomic_compare_exchange\)/\1_db/' src/dbinc/atomic.h
-```
-
-```
-cd build_unix                        &&
-../dist/configure --prefix=/usr      \
-                  --enable-compat185 \
-                  --enable-dbm       \
-                  --disable-static   \
-                  --enable-cxx       &&
+wget http://download.oracle.com/berkeley-db/db-4.7.25.tar.gz
+tar xzvf db-4.7.25.tar.gz
+cd db-4.7.25/build_unix/
+../dist/configure
 make
+make install
 ```
 
 ```
