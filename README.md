@@ -23,10 +23,10 @@ reboot
 
 ## Cài đặt các gói cần thiết
 
-Trong bước này một số gói có thể cài đặt bằng yum, một số gói không thể cài bằng yum mình sẽ cài bằng rpm hoặc từ tarball
+Trong bước này một số gói có thể cài đặt bằng yum, một số gói không thể cài bằng yum mình sẽ cài bằng rpm hoặc từ tarball.
 
 ```sh
-yum install wget rpm-build autoconf zlib-devel libselinux-devel libuuid-devel pcre-devel openldap-devel lua-devel libxml2-devel openssl-devel apr-devel postgresql-devel mysql-devel sqlite-devel unixODBC-devel nss-devel distcache-devel expat-devel mailcap libtool doxygen gnutls -y
+yum install wget rpm-build autoconf zlib-devel libselinux-devel libuuid-devel pcre-devel openldap-devel lua-devel libxml2-devel openssl-devel apr-devel postgresql-devel mysql-devel sqlite-devel unixODBC-devel nss-devel expat-devel mailcap libtool doxygen gnutls -y
 ```
 
 **freetds-devel**
