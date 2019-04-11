@@ -56,6 +56,7 @@ rpm -Uvh distcache-*
 
 ```sh
 yum install gcc-c++
+cd
 wget http://anduin.linuxfromscratch.org/BLFS/bdb/db-5.3.28.tar.gz
 tar -xzvf db-5.3.28.tar.gz
 
@@ -84,6 +85,7 @@ rpm -Uvh libdb4-devel-4.8.30-13.el7.x86_64.rpm
 **apr**
 
 ```sh
+cd
 wget http://mirror.downloadvn.com/apache//apr/apr-1.7.0.tar.bz2
 wget http://mirror.downloadvn.com/apache//apr/apr-util-1.6.1.tar.bz2
 ```
@@ -95,7 +97,7 @@ rpm -Uvh apr-*
 ```
 
 ```sh
- cd - 
+cd - 
 rpmbuild -tb apr-util-1.6.1.tar.bz2
 cd /root/rpmbuild/RPMS/x86_64/
 rpm -Uvh apr-util-*
@@ -106,6 +108,7 @@ rpm -Uvh apr-util-*
 Tạo một folder chứa các file thực thi
 
 ```sh
+cd
 mkdir httpd-build
 cd httpd-build/
 wget http://archive.apache.org/dist/httpd/httpd-2.4.28.tar.bz2
